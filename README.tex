@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+
+\title{Kickstart: Quickly Setup Mac}
+\author{Joshua Brest}
+\date{January 2nd 2023}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true
+}
+
+\begin{document}
+    \maketitle
+
+    \section{Introduction}
+
+    Kickstart is a tool to quickly install apps onto a mac. It is written purely in shell script and is thus easy to use. It does however require a homebrew plugin which it does automaticly install, but that's it.
+    
+    \section{Usage}
+        As Kickstart is writen in pure shell, it is only one command that is require to install all the configured apps.
+        \begin{lstlisting}[language=bash]
+/bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/JoshuaBrest/kickstart/HEAD/kick.sh)
+        \end{lstlisting}
+\end{document}
