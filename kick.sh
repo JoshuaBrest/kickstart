@@ -468,7 +468,9 @@ mas_install "441258766" "Magnet"
 # Balance: Mindful time tracking: id1637311725
 log "Installing Balance: Mindful time tracking"
 mas_install "1637311725" "Balance: Mindful time tracking"
-
+# Notability: id360593530
+log "Installing Notability"
+mas_install "360593530" "Notability"
 
 
 #-----------------#
